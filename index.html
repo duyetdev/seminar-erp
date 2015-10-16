@@ -10,7 +10,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
     <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/simple.css" id="theme">
+    <link rel="stylesheet" href="css/theme/moon.css" id="theme">
     <!-- Code syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
     <!-- Printing and PDF exports -->
@@ -31,196 +31,88 @@
         <!-- Any section element inside of this container is displayed as a slide -->
         <div class="slides">
             <section>
-                <h1>Prediction.io</h1>
-                <p>Introduction Prediction.io - DASE architecture</p>
-                <p>
-                    <small>Van-Duyet Le / <a href="mail:me@duyetdev.com">me@duyetdev.com</a></small>
-                </p>
-            </section>
-            <section>
-                <section>
-                    <h2>Bigdata and machine learning</h2>
-                    <p class="fragment">
-                        Building machine learning an application from scratch is hard.
-                    </p>
-                </section>
-                <section>
-                    <h2>Available Tools</h2>
-                    <div style="text-align:left">
-                        <p>
-                            Processing Framework
-                        </p>
-                        <ul>
-                            <li style="margin-left: 1em">e.g. Apache Spark, Apache Hadoop</li>
-                        </ul>
-                        <p>
-                            Algorithms Libraries
-                            <ul>
-                                <li style="margin-left: 1em">e.g. MLib, Mahout</li>
-                            </ul>
-                        </p>
-                        <p>
-                            Data Storage
-                            <ul>
-                                <li style="margin-left: 1em">e.g. HBase, Cassandra</li>
-                            </ul>
-                        </p>
+                
+                <h4>Hoạch định nguồn lực doanh nghiệp</h4>
+                <h5>Giảng viên: Đỗ Duy Thanh</h5>
+                <br/>
+                <h2>Kinh doanh quần áo thời trang</h2>
+                <br/>
+                <div>
+                    <div style="text-align:left"><p>Sinh viên thực hiện:</p></div>
+                    <div style="text-align:right">
+                        <p>Trần Thị Huyền Trang 13520907</p>
+                        <p>Lê Văn Duyệt 13520171</p>
+                        <p>Lý Gia Bảo 13520000</p>
                     </div>
-                </section>
-                <section>
-                    <p>
-                        Integrate everything together nicely and move from <strong>prototyping</strong> to <strong>production</strong>?
-                    </p>
-                </section>
-                <section>
-                    <ul>
-                        <li>collect data</li>
-                        <li>train your algorithm</li>
-                        <li>build a layer to serve the prediction results</li>
-                        <li>manage the different algorithms</li>
-                        <li>evaluations</li>
-                        <li>deploy your application in production</li>
-                    </ul>
-                </section>
+                </div>
+                
             </section>
+            
             <section>
-                <section>
-                    <p style="font-size:2em">
-                        <strong>Build</strong> and <strong>Deploy</strong>
-                        <br />
-                        <strong>Machine Intelligence</strong>
-                    </p>
-                    <p>
-                        in a fraction of the time.
-                    </p>
-                </section>
-                <section>
-                    <h1>PredictionIO</h1>
-                    <ul>
-                        <li>PredictionIO is a machine learning server for <span style="color:orange">building</span> and <span style="color:orange">deploying</span> predictive engines on production in a fraction of the time</li>
-                        <li>Built on Apache Spark, MLlib and HBase.</li>
-                    </ul>
-                </section>
-                <section data-bakground="#333333">
-                    <img src="images/overview-multiengines-b703caac.png" style="border:0" />
-                </section>
-                <section data-bakground="#333333">
-                    <img src="images/overview-singleengine-0a99200d.png" style="border:0" />
-                </section>
-                <section>
-                    <ol>
-                        <li>
-                            Open-source Machine Learning server.
-                        </li>
-                        <li>
-                            Core - engine deployment platform built on top of <strong>Apache Spark</strong>.
-                        </li>
-                        <li>
-                            Event Server built on top of <strong>Apache HBase</strong>.
-                        </li>
-                        <li>
-                            <strong class="fragment blue">DASE architecture</strong> of engine is the <i>"MVC for Machine Learning"</i>.
-                        </li>
-                        <li>
-                            Swap and evaluate algorithms as you wish.
-                        </li>
-                        <li class="fragment highlight-blue">Zero downtime training and deployment.</li>
-                        <li>
-                            Engine template.
-                        </li>
-                    </ol>
-                </section>
-                <section>
-                    <pre><code>$ pio template get
-$ cd MyEngine
-$ pio build; pio train; pio deploy</code></pre>
-                    <h2>Start with an Engine Template</h2>
-                    <img src="images/prediction-temlate.png" style="border:0" />
-                </section>
-                <section>
-                    <pre><code>Data Source                - readTraining()
-Data Preparator            - prepare()
-Algorithm:                 - train() 
-                           - predict()
-Serving                    - serve()
-Evaluator                  - evaluate()</code></pre>
-                    <h2>Customize Code with Software Design Pattern</h2>
-                    <ul>
-                        <li>DASE - <span class="fragment grow">the "MVC"</span> for Machine Learning</li>
-                        <li>Built-in support to Spark MLlib, or create your own algorithm</li>
-                    </ul>
-                </section>
-                <section>
-                    <pre><code>cli = predictionio.EventClient("<my_app_id>")
-cli.record_user_action_on_item("view","John","HackerNews")
-# predict top preferences
-eng = predictionio.EngineClient("<my_engine_url>")
-rec = eng.send_query({"uid":"John","n":5})</code></pre>
-                    <h2>Connect to your App with SDKs</h2>
-                </section>
+                <h2>Lý do chọn đề tài:</h2>
+                <p class="fragment">
+                    Nhu cầu cuộc sống ngày càng cao.
+                </p>
+                <p class="fragment">
+                    Vấn đề về thời trang ngày càng được quan tâm và chú trọng nhiều hơn.
+                </p>
+                <p class="fragment">
+                    Đặt biệt là phụ nữ.
+                </p>
             </section>
-            <section>
-                <h1>DASE</h1>
+
+             <section>
+                <h3>Phạm vi thực hiện</h3>
                 <ul>
-                    <li class="fragment">[D] Data Source and Data Preparator</li>
-                    <li class="fragment">[A] Algorithm</li>
-                    <li class="fragment">[S] Serving</li>
-                    <li class="fragment">[E] Evaluation Metrics</li>
+                    <li class="fragment" style="margin-left: 1em">Tập trung vào địa bàn thành phố Hồ Chí Minh</li>
+                    <li class="fragment" style="margin-left: 1em">Đối tượng khách hàng là nữ, tuổi chủ yếu từ 15 đến 35</li>
+                    <li class="fragment" style="margin-left: 1em">Mặc hàng chủ yếu là quần áo bao gồm các mặc hàng chính là: áo nữ, đầm váy, chân váy, quần nữ, jumpsuit, áo khoác</li>
+                    <li class="fragment" style="margin-left: 1em">Ngoài ra còn có các phụ kiện đi kèm: thắt lưng, ví,..</li>
                 </ul>
+                       
             </section>
+
             <section>
-                <a href="images/engineinstance-overview-c6668657.png" target="_blank"><img src="images/engineinstance-overview-c6668657.png" style="border:0" /></a>
-                <p>PredictionIO helps you modularize these components so you can build</p>
+                <h2>Mục tiêu của đề tài</h2>
+                <ul>
+                    <li class="fragment" style="margin-left: 1em">Lập website thương mại điện tử kinh doanh quần áo</li>
+                    <li class="fragment" style="margin-left: 1em">Khách hàng thông qua website để lựa chọn, đặt hàng, thanh toán và nhận hàng tận nơi.</li>
+                    <li class="fragment" style="margin-left: 1em">Cung cấp nhiều loại trang phục trẻ, đẹp, đa dạng hợp với xu hướng hiện đại</li>
+                    <li class="fragment" style="margin-left: 1em">Hỗ trợ khách hàng nam có nhu cầu mua quà tặng người thân</li>                        
+                </ul>                
             </section>
-            <section>
+
+            <section> 
                 <section>
-                    <p>Training a Model - The DASE View</p>
-                    <a href="images/engine-query-8d7311ff.png" target="_blank"><img src="images/engine-query-8d7311ff.png" style="border:0" /></a>
+                <h2>Giải pháp thực hiện</h2>
+                    <p class="fragment" style="margin-left: 1em">Xây dựng mô hình thương mại điện tử giữa doanh nghiệp và người tiêu dùng (B2C).</p>
+                    <img class="fragment" src="images/b2c.png" style="border:0" />
                 </section>
+
                 <section>
-                    <p>Respond to Prediction Query - The DASE View</p>
-                    <a href="images/engine-query-8d7311ff.png" target="_blank"><img src="images/engine-query-8d7311ff.png" style="border:0" /></a>
+                    <h2>Chức năng cần xây dựng</h2>
+                    <ul>
+                        <li class="fragment" style="margin-left: 1em">Quản lý bán hàng.</li>
+                        <li class="fragment" style="margin-left: 1em">Quản lý mua hàng.</li>
+                        <li class="fragment" style="margin-left: 1em">Quản lý kế toán và tài chính.</li>
+                        <li class="fragment" style="margin-left: 1em">Quản lý kho.</li> 
+                        <li class="fragment" style="margin-left: 1em">Quản lý nhân sự.</li> 
+                        <li class="fragment" style="margin-left: 1em">Quản lý sản phẩm.</li> 
+                        <li class="fragment" style="margin-left: 1em">Quản lý quan hệ khách hàng, nhà cung cấp.</li>                        
+                    </ul>
                 </section>
+
                 <section>
-                    <p>Query (Input) :</p>
-                    <pre><code>$ curl -H "Content-Type: application/json" -d
-'{ "user": "1", "num": 4 }'
-http://localhost:8000/queries.json</code></pre>
-                    <p>
-                        Predicted Result (Output):
-                        <pre><code>{“itemScores”:[{"item":"22","score":4.072304374729956},
-{"item":"62","score":4.058482414005789},
-{"item":"75","score":4.046063009943821}]}</code></pre>
-                    </p>
+                    <h2>Hạn chế của đề tài</h2>
+                    <ul>
+                        <li class="fragment" style="margin-left: 1em">Chỉ tập trung vào các sản phẩm dành cho nữ, nên phạm vi khách hàng không đa dạng.</li>
+                        <li class="fragment" style="margin-left: 1em">Chưa phân tích được hết các đối thủ cạnh tranh.</li>
+                        <li class="fragment" style="margin-left: 1em">Hạn chế về cách thức đổi trả hàng.</li>                                             
+                    </ul>
                 </section>
             </section>
-            <section>
-                <h2>Install</h2>
-                <pre><code>
-$ bash -c "$(curl -s https://install.prediction.io/install.sh)"
-                </code></pre>
-            </section>
-            <section>
-                <h2>Running</h2>
-                <p>
-                    Start the Event Server
-                </p>
-                <pre><code>
-$ pio eventserver
-                </code></pre>
-                <p>
-                    Deploy an Engine
-                </p>
-                <pre><code>
-$ pio build; pio train; pio deploy 
-                </code></pre>
-                <p>
-                    Update Engine Model with New Data
-                </p>
-                <pre><code>
-$ pio train; pio deploy 
-                </code></pre>
-            </section>
+
+
             <section style="text-align: left;">
                 <h1>THE END</h1>
                 <p>
