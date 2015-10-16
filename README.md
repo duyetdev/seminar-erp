@@ -1,8 +1,8 @@
-# Prediction.io Introduction 
+# ERP Presentation
 
-Live presentation at: https://intro-prediction.duyetdev.com
+Live presentation ERP (Topic: "Kinh doanh quần áo thời trang") at: https://siminar-erp.duyetdev.com
 
-<img src="https://i.imgur.com/TQ8u1ko.png" />
+<img src="https://i.imgur.com/s3uyj3g.png" />
 
 # References 
 
